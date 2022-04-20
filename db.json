@@ -11,12 +11,12 @@
       "active": [
         "plugin1",
         "plugin2",
-        "plugin3",
-        "plugin4"
+        "plugin5"
       ],
       "disabled": [],
       "inactive": [
-        "plugin5",
+        "plugin3",
+        "plugin4",
         "plugin6"
       ],
       "enabledAll": true
@@ -24,24 +24,26 @@
     "tab2": {
       "title": "Finance",
       "icon": "icon-finance",
-      "active": [],
-      "disabled": [
-        "plugin7",
+      "active": [
         "plugin10",
-        "plugin9",
-        "plugin8"
+        "plugin8",
+        "plugin7"
       ],
-      "inactive": [],
-      "enabledAll": false
+      "disabled": [],
+      "inactive": [
+        "plugin9"
+      ],
+      "enabledAll": true
     },
     "tab3": {
       "title": "Personnel",
       "icon": "icon-people",
-      "active": [],
+      "active": [
+        "plugin11",
+        "plugin12"
+      ],
       "disabled": [],
       "inactive": [
-        "plugin11",
-        "plugin12",
         "plugin13"
       ],
       "enabledAll": true

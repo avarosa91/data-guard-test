@@ -106,26 +106,30 @@ export default {
       if (!this.isEnabled) {
         this.colorClass = 'disabled';
         this.checkText = 'All plugins disabled';
-        this.tabData[this.activeTab].active.map((item) => {
-          if (this.tabData[this.activeTab].disabled.some((elem) => elem === item)) {
-            return;
-          }
-          this.tabData[this.activeTab].disabled.push(item)
-        });
-        this.tabData[this.activeTab].inactive.map((item) => {
-          if (this.tabData[this.activeTab].disabled.some((elem) => elem === item)) {
-            return;
-          }
-          this.tabData[this.activeTab].disabled.push(item)
-        });
-        this.tabData[this.activeTab].active = [];
-        this.tabData[this.activeTab].inactive = [];
-        this.tabData[this.activeTab].inactive.map((item) => arr.push(item));
+        Object.keys(this.tabData).forEach((key) => {
+          this.tabData[key].active.map((item) => {
+            if (this.tabData[key].disabled.some((elem) => elem === item)) {
+              return;
+            }
+            this.tabData[key].disabled.push(item)
+          });
+          this.tabData[key].inactive.map((item) => {
+            if (this.tabData[key].disabled.some((elem) => elem === item)) {
+              return;
+            }
+            this.tabData[key].disabled.push(item)
+          });
+          this.tabData[key].active = [];
+          this.tabData[key].inactive = [];
+          this.tabData[key].inactive.map((item) => arr.push(item));
+        })
       } else {
         this.colorClass = 'active';
         this.checkText = 'All plugins enabled';
-        this.tabData[this.activeTab].disabled.map((elem) => this.tabData[this.activeTab].inactive.push(elem));
-        this.tabData[this.activeTab].disabled = [];
+        Object.keys(this.tabData).forEach((key) => {
+          this.tabData[key].disabled.map((elem) => this.tabData[key].inactive.push(elem));
+          this.tabData[key].disabled = [];
+        });
       }
 
       const payload = {
