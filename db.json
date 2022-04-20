@@ -39,8 +39,8 @@
       "title": "Personnel",
       "icon": "icon-people",
       "active": [
-        "plugin11",
-        "plugin12"
+        "plugin12",
+        "plugin11"
       ],
       "disabled": [],
       "inactive": [
