@@ -8,7 +8,7 @@ Vue.use(VueAxios, axios);
 axios.defaults.headers.common.Accept = 'application/json';
 
 // Base URL
-axios.defaults.baseURL = 'http://localhost:3000';
+axios.defaults.baseURL = process.env.URL || 'http://localhost:3000';
 
 export default {
   axios,
