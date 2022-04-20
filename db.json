@@ -11,13 +11,13 @@
       "active": [
         "plugin1",
         "plugin2",
-        "plugin5"
+        "plugin3",
+        "plugin6"
       ],
       "disabled": [],
       "inactive": [
-        "plugin3",
-        "plugin4",
-        "plugin6"
+        "plugin5",
+        "plugin4"
       ],
       "enabledAll": true
     },
@@ -25,12 +25,12 @@
       "title": "Finance",
       "icon": "icon-finance",
       "active": [
-        "plugin10",
-        "plugin8",
-        "plugin7"
+        "plugin7",
+        "plugin8"
       ],
       "disabled": [],
       "inactive": [
+        "plugin10",
         "plugin9"
       ],
       "enabledAll": true
