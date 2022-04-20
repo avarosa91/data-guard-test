@@ -1,4 +1,19 @@
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-vue/src/index.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
 
-@import "variables";
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}

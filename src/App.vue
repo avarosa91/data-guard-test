@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import Home from './views/Home.vue'
+import Home from './views/Home.vue';
+import "./scss/app.scss";
 
 export default {
   name: 'App',
@@ -22,6 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>
