@@ -2,8 +2,9 @@ import Home from "@/views/Home.vue";
 
 const routes = [
     {
-        path: '/',
+        path: '/:tab?',
         name: 'Home',
+        props: true,
         component: Home,
     },
 ];
