@@ -96,10 +96,10 @@ export default {
       this.fetchTabsData().then((res) => {
         this.isBusy = false;
         this.isEnabled = res.data[this.activeTab].enabledAll;
-      }).catch((err) => alert(err));
+      }).catch((err) => console.log(err));
       this.fetchPlugins().then(() => {
         this.isBusy = false;
-      }).catch((err) => alert(err));
+      }).catch((err) => console.log(err));
     },
     onChangeSwitcher() {
       const arr = [];
@@ -138,7 +138,7 @@ export default {
 
       this.changeTabsData(payload).then(() => {
         this.getTabsData();
-      }).catch((err) => alert(err));
+      }).catch((err) => console.log(err));
     },
     onChangePluginCheckbox({ tab, plugin }) {
       if (this.tabData[tab].active.some((elem) => elem === plugin)) {
@@ -155,7 +155,7 @@ export default {
 
       this.changeTabsData(payload).then(() => {
         this.getTabsData();
-      }).catch((err) => alert(err));
+      }).catch((err) => console.log(err));
     }
   },
   watch: {
