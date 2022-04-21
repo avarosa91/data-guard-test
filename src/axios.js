@@ -8,7 +8,7 @@ Vue.use(VueAxios, axios);
 axios.defaults.headers.common.Accept = 'application/json';
 
 // Base URL
-axios.defaults.baseURL = `https://data-guard-test.herokuapp.com:${process.env.PORT}`;
+axios.defaults.baseURL = `https://data-guard-test.herokuapp.com`;
 
 export default {
   axios,
